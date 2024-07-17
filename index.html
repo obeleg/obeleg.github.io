@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>George Obubelebara Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">George Obubelebara</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/george3.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>George Obubelebara</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst  ',
+						'Statistical Analyst  '
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://github.com/obeleg" class="btn btn-primary py-3 px-4">My works</a> 
+							<!-- <a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about1.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>George Obubelebara</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+										<p><span class="title-s">Address: </span> <span>Lagos, Nigeria</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<!-- <span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am a dedicated data analyst who loves turning raw data into useful insights. With skills in statistics, SQL, excel, 
+									and data visualization, I can spot trends that help in making smart decisions. 
+									My goal is to use data to solve problems and improve processes. I love challenges and, 
+									even outside of this role, I strive to bring out the best in myself. I aim to provide top-quality analytical solutions 
+									and work well with my team to make a positive impact in the tech world.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Arts (B.A) in Linguistics and Communication Studies</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
+									<!-- <li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Teaching, Researching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="15">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/obubelebara-george-6110182b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>A data analyst who loves turning raw data into useful insights. With skills in statistics, SQL, excel, 
+				and data visualization.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>Data Analyst Intern</h2>
+						<span class="position">Sinet Technologies</span>
+						<p class="mt-4"> 
+							<ul>
+								<li>Creating visualizations such as charts, graphs, and dashboards to communicate findings.</li>
+								<li>Performing statistical analysis to extract insights from large datasets.</li>
+								<li>Cleaning and preprocessing data to remove duplicates and errors ensuring accuracy for analysis.</li>
+								<li>Predictive models to forecast future trend, behaviors, or outcomes based on historical data, contributing to strategic planning.</li>
+								<li>Managing data analysis projects from beginning to completion ensuring timely and accurate execution.</li>
+								<li>Actively seeking opportunities for growth and skill development, such as attending workshops, and webinars to improve data analysis capabilities.</li>
+								<li>Entering data into spreadsheets accurately.</li>
+								<li>Assists in transforming and restructuring data to prepare it for analysis.</li>
+								<li>Learns to effectively communicate data analysis findings through presentations and reports.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021</span>
+						<h2>Customer Service Representative</h2>
+						<span class="position">Fitness Options Ltd</span>							
+							<ul>
+								<li>Welcomed members, checked them in, and provided assistance or information.</li>
+								<li>Assisted prospective members with selecting membership packages, conducted facility tours, and answered questions.</li>
+								<li>Handled member inquiries, resolved complaints, and ensured high member satisfaction.</li>
+								<li>Promoted memberships and conducted outreach to potential members to drive sales.</li>
+								<li>Managed scheduling and registration for fitness classes, ensuring smooth operations.</li>
+								<li>Entered member information and class schedules into the database, maintaining accurate records.</li>
+								<li>Reached out to members with expiring memberships to remind them to renew and assisted with the process.</li>
+								<li>Provided customer service through phone calls and live chat, assisting with membership inquiries, class registrations, and account management.</li>
+								<li>Assisted members with purchasing fitness apparel, accessories, and supplements.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2019</span>
+    					<h2>Bachelor of Arts (B.A) in Linguistics and Communication Studies</h2>
+    					<span class="position">University of Port Harcourt, Rivers State, Nigeria.</span>
+    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2015</span>
+    					<h2>Certificate in Linguistics and Communication Studies</h2>
+    					<span class="position">University of Port Harcourt, Rivers State, Nigeria.</span>
+    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
+    				</div>
+				</div>
+    		</div>
+
+    		<!-- <div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1o4FpCVtSc163W5hbbTf3PkpI4iZkbBkU/view?usp=drivesdk" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div> -->
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on Statistical Analysis, Power BI & Excel</p>
+          </div>
+        </div>
+		<h2 class="mb-4">Statistical Analysis</h2>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/obeleg/snowfall-and-citizen-satisfaction" class="block-20 zoom-effect" style="background-image: url('images/snowfall.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/obeleg/snowfall-and-citizen-satisfaction">Exploring the Relationship Between Snowfall and Citizen Satisfaction: Insights from the Naperville Community Survey Using Excel</a></h3>
+                <p>This project presents a statistical analysis overview of the 2016 Naperville Community Survey findings, focusing on assessing citizen satisfaction with snow removal and road maintenance—crucial services given the region's susceptibility to inclement weather.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/obeleg/seasonal-patterns-in-juvenile-crime" class="block-20 zoom-effect" style="background-image: url('images/juvenile-crime.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/obeleg/seasonal-patterns-in-juvenile-crime">Statistical Analysis on Seasonal Patterns in Juvenile Crime Using Excel</a></h3>
+                <p>The project covers seasonal patterns in juvenile crime, unemployment rates by population category, and employee satisfaction with working conditions based on years employed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/obeleg/Orange-county-public-perception-analysis" class="block-20 zoom-effect" style="background-image: url('images/orange-county.jfif');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/obeleg/Orange-county-public-perception-analysis">Orange County Public Perception Statistical Analysis</a></h3>
+                <p>The project focuses on analyzing public perception data collected from 1,034 telephone interviews among residents of Orange County, Florida. It is aimed at understanding the importance residents place on various issues such as helping public schools, fighting illegal drug use, and dealing with gang problems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/obeleg/Orange-county-public-perception-analysis-2" class="block-20 zoom-effect" style="background-image: url('images/orange-county2.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/obeleg/Orange-county-public-perception-analysis-2">Orange County Public Perception Statistical Analysis 2</a></h3>
+				  <p>This project presents an analysis based on data from two primary datasets: the Public Perception dataset and the Employee Attitudes dataset. The Public Perception dataset includes responses from residents of Orange County, Florida, regarding various community issues, while the Employee Attitudes dataset encompasses assessments from employees of Seminole County Government, Florida, on various job-related aspects.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/obeleg/watershed-analysis" class="block-20 zoom-effect" style="background-image: url('images/watershed.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/obeleg/watershed-analysis">Watershed Analysis Using Excel</a></h3>
+				  <p>This analysis involves calculating various descriptive statistics and assessing their implications for park attendance. Additionally, data from the Environmental Protection Agency’s (EPA) Index of Watershed Indicators is utilized to perform further statistical analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/obeleg/watershed-analysis2" class="block-20 zoom-effect" style="background-image: url('images/watershed2.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/obeleg/watershed-analysis2">Watershed Analysis 2 Using Excel</a></h3>
+				  <p>This project focuses on the analysis of the Watershed dataset, developed from various variables, explanations, descriptions, and specific data within the Environmental Protection Agency’s (EPA) Index of Watershed Indicators. The primary objective is to examine the quality of watersheds across different regions and their associated pollutant levels, providing insights that can inform environmental management and policy decisions.</p>
+				</div>
+			  </div>
+			</div>
+		</div>
+	<br>
+	<h2 class="mb-4">Excel</h2>
+	<div class="row d-flex">
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/obeleg/nobel-prize-winners" class="block-20 zoom-effect" style="background-image: url('images/nobel.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/obeleg/nobel-prize-winners">Nobel Prize Winners Analysis Using Excel</a></h3>
+			  <p>Nobel prize winners data analysis using excel</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/obeleg/northwind-traders" class="block-20 zoom-effect" style="background-image: url('images/northwind.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/obeleg/northwind-traders">NorthWind Traders Data Analysis</a></h3>
+			  <p>NorthWind traders data analysis using excel and pivot table</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://github.com/obeleg/ski-resorts" class="block-20 zoom-effect" style="background-image: url('images/ski.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/obeleg/ski-resorts">Ski Resorts Data Analysis</a></h3>
+			  <p>Ski Resorts resorts data analysis using excel and pivot table</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  <br>
+	  <!-- added justify-content-center to center align the last two projects -->
+	  <div class="row d-flex justify-content-center">  
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a href="https://github.com/obeleg/tdf-data" class="block-20 zoom-effect" style="background-image: url('images/tdf.jpg');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/obeleg/tdf-data">TDF Analysis Using Excel</a></h3>
+				<p>TDF data analysis using excel and pivot table for summary.</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a href="https://github.com/obeleg/result-questionnaire" class="block-20 zoom-effect" style="background-image: url('images/questionnaire.jpg');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/obeleg/result-questionnaire">Questionnaire Data Analysis</a></h3>
+				<p>Questionnaire data analysis using excel and pivot table</p>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	<br>
+	<h2 class="mb-4">Power BI</h2>
+	<div class="row d-flex">
+	  <div class="col-md-4 d-flex ftco-animate">
+		  <div class="blog-entry justify-content-end">
+		  <a href="https://app.powerbi.com/view?r=eyJrIjoiZjZjNmMxYjgtNWE5NS00NWMzLTk2OWQtMGM5ODlmNmQ1N2QzIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="block-20 zoom-effect" style="background-image: url('images/proj1.jpeg');">
+		  </a>
+		  <div class="text mt-3 float-right d-block">
+
+			<h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiZjZjNmMxYjgtNWE5NS00NWMzLTk2OWQtMGM5ODlmNmQ1N2QzIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9">LSETF Scholarship Applicant Project</a></h3>
+			<p>United State Africa Development Foundation (USADF) and Lagos State Employment Trust Fund (LSETF) seek to curb the issue of unemployment in Lagos state 
+			through USADF-LSETF Employability Project by equipping</p>
+			<p><a href="https://github.com/obeleg/lsetf-project" class="btn btn-white btn-outline-white py-3 px-4">Read more</a>
+			<a href="https://app.powerbi.com/view?r=eyJrIjoiZjZjNmMxYjgtNWE5NS00NWMzLTk2OWQtMGM5ODlmNmQ1N2QzIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="btn btn-primary py-3 px-4">See Dashboard</a> 
+			</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4 d-flex ftco-animate">
+		  <div class="blog-entry justify-content-end">
+		  <a href="https://app.powerbi.com/view?r=eyJrIjoiM2JkNWUzYWItZjExMS00ZDFiLThhODEtYjg2YTc2MTY2MmJiIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="block-20 zoom-effect" style="background-image: url('images/Proj2.jpeg');">
+		  </a>
+		  <div class="text mt-3 float-right d-block">
+
+			<h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiM2JkNWUzYWItZjExMS00ZDFiLThhODEtYjg2YTc2MTY2MmJiIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9">Colombos Cafes Report Project</a></h3>
+			<p>The Colombo Caffe Project appears to be part of the broader development efforts within the Colombo Port City, an ambitious initiative transforming Sri Lanka into a major economic and service hub. This project involves significant public-private partnerships,
+			 including collaboration with the China Harbour Engineering Corporation.</p>
+			<p><a href="https://github.com/obeleg/colombo-cafe" class="btn btn-white btn-outline-white py-3 px-4">Read more</a>
+				<a href="https://app.powerbi.com/view?r=eyJrIjoiM2JkNWUzYWItZjExMS00ZDFiLThhODEtYjg2YTc2MTY2MmJiIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="btn btn-primary py-3 px-4">See Dashboard</a>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4 d-flex ftco-animate">
+		  <div class="blog-entry">
+		  <a href="https://app.powerbi.com/view?r=eyJrIjoiZmVhM2ZiMzEtMjQxNy00ODQ4LTgzZTMtZGY2MWE2ODA5NmE0IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="block-20 zoom-effect" style="background-image: url('images/Proj3.jpeg');">
+		  </a>
+		  <div class="text mt-3 float-right d-block">
+
+			<h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiZmVhM2ZiMzEtMjQxNy00ODQ4LTgzZTMtZGY2MWE2ODA5NmE0IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9">Technical Support Report</a></h3>
+			<p>The Technical Support Dashboard project visualizes and tracks the performance metrics of a technical support team, providing detailed insights into ticket management. It highlights key areas such as ticket volume, types of issues
+			(e.g., product setup, pricing/licensing, feature requests), and geographical distribution.</p>
+			<p><a href="https://github.com/obeleg/technical-support" class="btn btn-white btn-outline-white py-3 px-4">Read more</a>
+				<a href="https://app.powerbi.com/view?r=eyJrIjoiM2JkNWUzYWItZjExMS00ZDFiLThhODEtYjg2YTc2MTY2MmJiIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="btn btn-primary py-3 px-4">See Dashboard</a>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+<br>
+	<!-- added justify-content-center to center align the last two projects -->
+	<div class="row d-flex">  
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://app.powerbi.com/view?r=eyJrIjoiNDk2YjVlZTgtNTQzOS00ZGU1LTk3MDEtY2FhZTNlNDJkNzM5IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="block-20 zoom-effect" style="background-image: url('images/Proj4.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiNDk2YjVlZTgtNTQzOS00ZGU1LTk3MDEtY2FhZTNlNDJkNzM5IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9">Premier League Analysis Report</a></h3>
+			  <p>This dashboard project appears to be presenting statistics and data about the English Premier League football (soccer) competition.
+				It covers seasons from 2000/2001 to 2008/2009 and potentially beyond. The dashboard displays various metrics including:
+			</p>
+			  <p><a href="https://github.com/obeleg/premier-league" class="btn btn-white btn-outline-white py-3 px-4">Read more</a>
+				<a href="https://app.powerbi.com/view?r=eyJrIjoiNDk2YjVlZTgtNTQzOS00ZGU1LTk3MDEtY2FhZTNlNDJkNzM5IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="btn btn-primary py-3 px-4">See Dashboard</a>
+			</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://app.powerbi.com/view?r=eyJrIjoiNGM4ZWY2YjQtZTI1MS00ZmIyLTgwZjktNzNiOGMyMTYyOTNhIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="block-20 zoom-effect" style="background-image: url('images/Proj5.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiNGM4ZWY2YjQtZTI1MS00ZmIyLTgwZjktNzNiOGMyMTYyOTNhIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9">Sales Performance Analysis Report</a></h3>
+			  <p>The sales performance project involves analyzing and visualizing a company's sales data to identify trends, top-performing areas, and potential improvements.
+				It integrates data from various sources such as CRM systems, e-commerce platforms, and financial records to provide a comprehensive view of sales metrics like total sales, growth rates, and customer acquisition costs. </p>
+			  <p><a href="https://github.com/obeleg/sales-transaction" class="btn btn-white btn-outline-white py-3 px-4">Read more</a>
+				<a href="https://app.powerbi.com/view?r=eyJrIjoiNGM4ZWY2YjQtZTI1MS00ZmIyLTgwZjktNzNiOGMyMTYyOTNhIiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="btn btn-primary py-3 px-4">See Dashboard</a> 
+			</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://app.powerbi.com/view?r=eyJrIjoiNzQyZWM3MGYtZjgzYi00NGYxLWE4YTUtOGVjMTRhNTMwMTY0IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="block-20 zoom-effect" style="background-image: url('images/Proj6.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiNzQyZWM3MGYtZjgzYi00NGYxLWE4YTUtOGVjMTRhNTMwMTY0IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9">HR Analytics Dashboard</a></h3>
+			  <p>This dashboard presents HR analytics for a company. It shows key workforce metrics including:
+				Total employees, Active employees, Attrition rate, Average years at company, Job satisfaction rating</p>
+			  <p><a href="https://github.com/obeleg/hr-analytics" class="btn btn-white btn-outline-white py-3 px-4">Read more</a>
+				<a href="https://app.powerbi.com/view?r=eyJrIjoiNzQyZWM3MGYtZjgzYi00NGYxLWE4YTUtOGVjMTRhNTMwMTY0IiwidCI6Ijg4MjQzNWZmLTQ1YWItNDNiZS1hZmE1LTFkMjU1YjAxMjJjYyJ9" class="btn btn-primary py-3 px-4">See Dashboard</a> 
+			</p>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+
+
+
+        </div>
+
+		
+		</div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <!-- <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/obeleg" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <!-- <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Lagos, Nigeria</p>
+	          </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+2349068781130">+234 9068 781 130</a></p>
+	          </div>
+          </div> -->
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:Obubelebarageorge9@gmail.com">Obubelebarageorge9@gmail.com</a></p>
+	          </div>
+          </div> -->
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div> --> -->
+
+		  <div class="container">
+			<br>
+			<br>
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div> -->
+				<!-- <br> -->
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/obubelebara-george-6110182b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
